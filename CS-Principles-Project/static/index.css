@@ -1,0 +1,105 @@
+/*
+ * static/css/index.css
+ * 
+ * Styles for templates/index.html
+ * 2021 CSP Create Project
+ * A realtime internet chat room using WebSockets handled with Flask SocketIO
+ * Built on a Flask Python server with a JavaScript client
+ */
+
+body {
+  background-color: #0a0a0c;
+}
+div {
+  margin: 20px;
+  padding: 0px;
+  border: 2px #657786 solid;
+  background-color: black;
+}
+table {
+  font-family:arial;
+  border-collapse: collapse;
+  margin: 20px 20px 20px 20px; 
+  padding: 0px;
+}
+.msgtable {
+  width: 960px;
+  overflow-y:scroll;
+  height:85%;
+  display:block;
+}
+td {
+  text-align: left;
+  padding: 8px;
+  color: white;
+}
+.username {
+  border-bottom:  2px solid #657786;
+  overflow-wrap: anywhere;
+  width: 20%;
+}
+.msg {
+  border-bottom:  2px solid #657786;
+  overflow-wrap: anywhere;
+  width: 80%;
+}
+.time {
+  border-bottom:  2px solid #657786;
+  width: 30%;
+}
+h1 {
+  font-family: arial; 
+  text-align:left; 
+  margin: 10px; 
+  padding: 0px;
+  font-size: 220%; 
+}
+p {
+  color:white;
+  font-size:120%;
+  font-family: arial; 
+  text-align:left; 
+  margin: 10px; 
+  padding: 0px;
+}
+a {
+  color:#1DA1F2;
+  font-family:arial; 
+}
+a:hover {
+  color:#0d659c;
+  font-size:100%;
+  font-family:arial; 
+  text-align:left; 
+}
+textarea {
+  font-family:arial;
+  margin: 0px;
+  padding: 5px;
+  border: 2px white solid;
+  border-radius: 10px;
+  resize: none;
+}
+input[type=text] {
+  font-family:arial; 
+  margin: 0px;
+  padding: 5px;
+  border: 2px white solid;
+  width: 365px;
+  border-radius: 30px;
+}
+input[type=submit] {
+  font-family:arial; 
+  font-size:130%;
+  margin: 0px; 
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #1DA1F2;
+  color: white;
+  border: 2px #1DA1F2 solid;
+}
+input[type=submit]:hover {
+  background-color: #0d659c;
+  border: 2px #0d659c solid;
+  font-family: arial ;
+}

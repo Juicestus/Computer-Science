@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!--
+Made for 2021 CSP Create Project
+I am not responsible for the content
+posted by users of the website
+-->
+<html>
+    <head>
+        <title>CSP ChatRoom</title>
+		<!--
+		External Scripts
+		JQuery: <https://jquery.com/>
+		SocketIO: <https://socket.io/> (client side JS, not Node)
+		-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"><!--index.css for page stylesheet-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+                integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous">
+        </script><!--JQuery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js" 
+                integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ==" crossorigin="anonymous">
+        </script><!--SocketIO-->
+		<script src="{{ url_for('static', filename='index.js') }}"></script><!--index.js-->
+    </head>
+    <!-- Body -->
+    <body class=''>
+        <div class='centered' style='width: 1000px;'> <!-- Send Box -->
+            <form action='' method='POST' id='sendForm'> <!-- Form -->
+            <table>
+                <tr>
+                    <td>Username: </td>
+                    <td><input type='text' class='username' placeholder='Username' maxlength='50' id='userbox'> 
+                    </td>
+                    <td><h1>Send Message!</h1></td>
+                </tr>
+                <tr>
+                    <td>Message: </td>
+                    <td><textarea maxlength="100" 
+                        name='message' class='message'rows='4' cols='50' name='message' 
+                        id='messageArea' form='sendForm' placeholder='Message...' id='msbox'></textarea>
+                    </td>
+                <td><input type='submit' value='Send'></td>
+                </tr>
+            </table>
+            </form>
+        </div> 
+        <!-- Message Box -->
+        <div class='centered' style='width: 1000px; height: 580px;'>
+            <table class='msgtable'  id='messages'> <!-- Table for messages to load -->
+            </table>  
+			<p id="newmsg" style="margin-left:20px; margin-bottom:5px;"></p>
+        </div>
+    </body>
+</html>
