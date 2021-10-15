@@ -1,19 +1,22 @@
 import java.util.*;
 
 public class Pr0208 {
-	public static String removeFirst(char c, String s) {
-		return s.substring(0, s.indexOf(c)) 
-				+ s.substring(s.indexOf(c) + 1);
+	public static void halves(String s) {
+		int len = s.length();
+		int half = (int)(len / 2);
+		String h1 = s.substring(0, half);
+		String h2 = s.substring(half);
+		System.out.printf("String length: %d\n"
+						+ "First half of string: %s\n"
+						+ "Second half of string: %s\n",
+						len, h1, h2);
 	}
     
     public static void main(String[] args) {    
         Scanner kb = new Scanner(System.in);    
-        System.out.print("Give a string with at least 3 capital F's: ");    
+        System.out.print("Give a sentance: ");    
         String line = kb.nextLine(); 
 		
-		line = removeFirst('F', line);
-		line = removeFirst('F', line);
-		line = removeFirst('F', line);
-		System.out.println("FFF" + line);
+		halves(line);
     }
 }
