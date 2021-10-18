@@ -1,9 +1,8 @@
 import java.util.*;
 
-public class Pr0208 {
+public class Pr0209 {
 	public static String removeFirst(char c, String s) {
-		return s.substring(0, s.indexOf(c)) 
-				+ s.substring(s.indexOf(c) + 1);
+		return s.substring(0, s.indexOf(c)) + s.substring(s.indexOf(c) + 1);
 	}
     
     public static void main(String[] args) {    

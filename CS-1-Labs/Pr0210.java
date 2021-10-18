@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Pr0208 {
+public class Pr0210 {
 	public static void halves(String s) {
 		int len = s.length();
 		int half = (int)(len / 2);
