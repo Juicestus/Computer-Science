@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Pr02011 {
+public class Pr0211 {
    	public static String pig(String w) {
 		return w.substring(1) + w.charAt(0) + "ay";
 	}

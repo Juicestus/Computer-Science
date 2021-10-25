@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Pr02012 {
+public class Pr0212 {
    	public static String unPig(String w) {
 		return w.charAt(w.length() - 3) + w.substring(0, w.length() - 3);
 	}
