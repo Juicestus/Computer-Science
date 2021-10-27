@@ -13,6 +13,7 @@ public class Pr0204 {
         double b = kb.nextInt();    
         System.out.print("Give me a final integer: ");    
         double c = kb.nextInt();    
-        System.out.println(avg(a, b, c));    
+        System.out.println(avg(a, b, c)); 
+
     }
 }
