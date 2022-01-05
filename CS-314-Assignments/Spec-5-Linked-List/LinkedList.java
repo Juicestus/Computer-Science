@@ -12,6 +12,8 @@
 
 import java.util.Iterator;
 
+import javax.swing.InputMap;
+
 public class LinkedList<E> implements IList<E> {
 
     // CS314 students. Add you instance variables here.
@@ -163,6 +165,62 @@ public class LinkedList<E> implements IList<E> {
         return current.data;
     }
 
+    @Override
+    public E remove(int pos) {
+        if (pos <= -1) throw new IndexOutOfBoundsException();
+
+        if (pos == 0) {
+            return removeFirst();
+        } else if (head.next == null) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        Node<E> current = head;
+        for (int index = 0; index < pos - 1; index++) {
+            if (current.next == null)
+                throw new IndexOutOfBoundsException();
+            current = current.next;
+        }
+
+        if (current.next == null)
+            throw new IndexOutOfBoundsException();
+        E old = current.next.data;
+        current.next = current.next.next;
+        return old;
+    }
+
+    @Override
+    public boolean remove(E obj) {
+        try {
+            E v = remove(indexOf(obj));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    @Override
+    public int indexOf(E item) {
+        Node<E> current = head;
+        for (int index = 0; current.next != null; index++) {
+            if (current.data == item)
+                return index;
+            current = current.next;
+        } 
+        return -1;
+    }
+
+    @Override
+    public int indexOf(E item, int pos) {
+        Node<E> current = head;
+        for (int index = 0; current.next != null; index++) {
+            if (index >= pos)
+                if (current.data == item)
+                    return index;       
+            current = current.next;
+        } 
+        return -1;
+    }
 
     
     @Override
@@ -177,4 +235,5 @@ public class LinkedList<E> implements IList<E> {
         sb.append(" }");
         return sb.toString();
     }
+
 }

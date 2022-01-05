@@ -60,7 +60,7 @@ public interface IList<E> {
      * @param pos the position of the element to remove from the list
      * @return the data at position pos
      */
-    //E remove(int pos);
+    E remove(int pos);
 
     /**
      * Remove the first occurrence of obj in this list.
@@ -74,7 +74,7 @@ public interface IList<E> {
      * @return Return <tt>true</tt> if this list changed
      * as a result of this call, <tt>false</tt> otherwise.
      */
-    //boolean remove(E obj);
+    boolean remove(E obj);
 
     /**
      * Return a sublist of elements in this list
@@ -112,7 +112,7 @@ public interface IList<E> {
      * @return return the index of the first element equal to item
      * or a -1 if item is not present
      */
-    //int indexOf(E item);
+    int indexOf(E item);
 
     /**
      * find the position of an element in the list starting
@@ -128,7 +128,7 @@ public interface IList<E> {
      * or a -1 if item is not present between pos
      * and the end of the list
      */
-    //int indexOf(E item, int pos);
+    int indexOf(E item, int pos);
 
     /**
      * return the list to an empty state.

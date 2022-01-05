@@ -1,6 +1,18 @@
 import java.util.Scanner;
 
+/**
+ * Utility library for Computer Science 1 in Java.
+ *
+ * @author Steven Smith
+ * @author Justus Languell
+ */
 public class MyLibrary {
+	/**
+	 * Private constructor makes class static as no instances 
+	 * can be created
+	 */
+	private MyLibrary() {}
+
 	/**
 	 * This method will return an integer in the range [1,n]
 	 *
