@@ -166,7 +166,7 @@ public class LinkedList<E> implements IList<E> {
     }
 
     @Override
-    public E remove(int pos) {
+    public E remove(int pos)  {
         if (pos <= -1) throw new IndexOutOfBoundsException();
 
         if (pos == 0) {
