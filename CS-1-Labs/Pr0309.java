@@ -18,14 +18,14 @@ public class Pr0309 {
         // c ≤ b ≤ a
         else if (c <= b && b <= a)
             return "" + c + b + a;
-            
+
         return "If you are seeing this message, something is very, very wrong";
     }
+
     public static void main(String[] args) {
         System.out.println(order(
-            MyLibrary.getDouble("Gimme a number"),
-            MyLibrary.getDouble("Gimme another number"),
-            MyLibrary.getDouble("Gimme a third number")
-        ));
+                MyLibrary.getDouble("Gimme a number"),
+                MyLibrary.getDouble("Gimme another number"),
+                MyLibrary.getDouble("Gimme a third number")));
     }
 }

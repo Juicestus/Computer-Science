@@ -17,4 +17,3 @@ public class Pr0206 {
 		System.out.println(sAndP(a, b, c));
 	}
 }
-

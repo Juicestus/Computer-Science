@@ -10,7 +10,7 @@ public class Pr0106 {
 		System.out.print("Give me one more integer: ");
 		int c = kb.nextInt();
 
-	    double average = (a + b + c) / 3.0;
-	    System.out.printf("The average of the three numbers is %.3f\n", average);
+		double average = (a + b + c) / 3.0;
+		System.out.printf("The average of the three numbers is %.3f\n", average);
 	}
 }

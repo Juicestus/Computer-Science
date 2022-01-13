@@ -12,13 +12,13 @@ public class Pr0311 {
         else
             return 'F';
     }
+
     public static void main(String[] args) {
         System.out.println(letterGrd(
-            MyLibrary.getDouble("Grade 1: "),
-            MyLibrary.getDouble("Grade 2: "),
-            MyLibrary.getDouble("Grade 3: "),
-            MyLibrary.getDouble("Grade 4: "),
-            MyLibrary.getDouble("Grade 5: ")
-        ));
+                MyLibrary.getDouble("Grade 1: "),
+                MyLibrary.getDouble("Grade 2: "),
+                MyLibrary.getDouble("Grade 3: "),
+                MyLibrary.getDouble("Grade 4: "),
+                MyLibrary.getDouble("Grade 5: ")));
     }
 }

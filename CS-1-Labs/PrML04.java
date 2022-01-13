@@ -3,11 +3,10 @@ public class PrML04 {
 		return MyLibrary.round((a + b + c) / 3., 5);
 	}
 
-    public static void main(String[] args) {
-		System.out.println( avg(
+	public static void main(String[] args) {
+		System.out.println(avg(
 				MyLibrary.getInt("Gimme a number"),
 				MyLibrary.getInt("Gimme another number"),
-				MyLibrary.getInt("Gimme one last number")
-		));
-    }
+				MyLibrary.getInt("Gimme one last number")));
+	}
 }

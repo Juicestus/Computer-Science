@@ -12,4 +12,3 @@ public class Pr0205 {
         System.out.println(square(number));
     }
 }
-

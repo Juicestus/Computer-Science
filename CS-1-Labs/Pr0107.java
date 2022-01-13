@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
 public class Pr0107 {
-public static void main(String args[]) {
+	public static void main(String args[]) {
 		Scanner kb = new Scanner(System.in);
 		System.out.print("Give me a number: ");
-		double numberA = kb.nextFloat(); kb.nextLine();
+		double numberA = kb.nextFloat();
+		kb.nextLine();
 		System.out.print("Give me another number: ");
-		double numberB = kb.nextFloat(); kb.nextLine();
+		double numberB = kb.nextFloat();
+		kb.nextLine();
 		System.out.print("Give me a short phrase: ");
 		String shortPhrase = kb.nextLine();
 

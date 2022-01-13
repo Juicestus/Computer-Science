@@ -78,15 +78,15 @@ public class Pr0310 {
         else if (d <= a && a <= b && b <= c)
             // d ≤ a ≤ b ≤ c
             return d + " " + a + " " + b + " " + c;
-        else 
+        else
             return "";
     }
-    
+
     public static void main(String[] args) {
         System.out.println("Enter four numbers!");
         System.out.println(order(MyLibrary.getDouble("Number 1: "),
-                                 MyLibrary.getDouble("Number 2: "),
-                                 MyLibrary.getDouble("Number 3: "),
-                                 MyLibrary.getDouble("Number 4: ")));
+                MyLibrary.getDouble("Number 2: "),
+                MyLibrary.getDouble("Number 3: "),
+                MyLibrary.getDouble("Number 4: ")));
     }
 }

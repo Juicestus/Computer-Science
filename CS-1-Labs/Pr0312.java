@@ -4,13 +4,13 @@ public class Pr0312 {
         double max = Math.max(Math.max(Math.max(a, b), Math.max(c, d)), e);
         return MyLibrary.round((a + b + c + d + e - min - max) / 3., 2);
     }
+
     public static void main(String[] args) {
         System.out.println(curve(
-            MyLibrary.getDouble("Grade 1: "),
-            MyLibrary.getDouble("Grade 2: "),
-            MyLibrary.getDouble("Grade 3: "),
-            MyLibrary.getDouble("Grade 4: "),
-            MyLibrary.getDouble("Grade 5: ")
-        ));
+                MyLibrary.getDouble("Grade 1: "),
+                MyLibrary.getDouble("Grade 2: "),
+                MyLibrary.getDouble("Grade 3: "),
+                MyLibrary.getDouble("Grade 4: "),
+                MyLibrary.getDouble("Grade 5: ")));
     }
 }
