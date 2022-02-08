@@ -2,7 +2,7 @@
 
 ## What did I get?
 
-I got a **5** on the exam, the highest score possible. Only about 10% of students who took the test that year got a 5. 30% of the grade was this project, while the remaining 70% where from the multiple choice component.
+I got a **5** on the exam, the highest score possible. Only about 10% of students who took the test that year got a 5. 30% of the grade was this project, while the remaining 70% was from the multiple choice component.
 
 ## What is the create project?
 
