@@ -7,7 +7,6 @@ public class Pr0501 {
 		double sum = 0, n = 0;
 		for ( ; chopper.hasNextDouble(); n++)
 			sum += chopper.nextDouble();
-		System.out.printf("Sum: %f, Avg: %f\n", 
-				sum, sum / n);
+		System.out.printf("Sum: %f, Avg: %f\n", sum, sum / n);
     }
 }
