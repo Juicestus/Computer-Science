@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class FileRead02 {
+public class FileLab02 {
     public static void main(String[] args) throws IOException {
 		
 		Scanner fileReader = new Scanner(new File("../dat/02.dat"));

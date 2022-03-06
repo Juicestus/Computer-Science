@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.io.File;
 import java.io.FileWriter;
 
-public class FileRead03 {
+public class FileLab03 {
     public static void main(String[] args) throws IOException {
 		Scanner fileReader = new Scanner(new File("../dat/03.dat"));
 		fileReader.nextLine();
