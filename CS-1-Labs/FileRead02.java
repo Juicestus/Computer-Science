@@ -4,7 +4,7 @@ import java.util.*;
 public class FileRead02 {
     public static void main(String[] args) throws IOException {
 		
-		Scanner fileReader = new Scanner(new File("dat/second.dat"));
+		Scanner fileReader = new Scanner(new File("../dat/02.dat"));
 		int sum = 0;
 		while (fileReader.hasNextInt())
 			sum += fileReader.nextInt();
