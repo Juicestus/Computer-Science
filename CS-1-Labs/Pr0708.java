@@ -1,18 +1,6 @@
 import java.util.*;
 public class Pr0708 {
 
-	public static boolean isAscending(ArrayList<Integer> list) {
-		for (int i = 1; i < list.size(); i++)
-			if (list.get(i - 1) > list.get(i)) return false;
-		return true;
-	}
-
-	public static boolean isDescending(ArrayList<Integer> list) {
-		for (int i = 1; i < list.size(); i++)
-			if (list.get(i - 1) < list.get(i)) return false;
-		return true;
-	}
-
     public static void main(String[] args) {
 		int[] array = { 1,2,3,5,6,9,10,12,11,8,7,6};
 
