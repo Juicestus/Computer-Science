@@ -7,6 +7,9 @@ import java.util.Scanner;
  * @author Justus Languell
  */
 public class MyLibrary {
+	
+	private final static Scanner kb = new Scanner(System.in);
+
 	/**
 	 * Private constructor makes class static as no instances
 	 * can be created
@@ -45,7 +48,6 @@ public class MyLibrary {
 	 * @return The integer from the user
 	 */
 	public static int getInt(String prompt) {
-		Scanner kb = new Scanner(System.in);
 		System.out.print(prompt + "  ");
 		return kb.nextInt();
 	}
@@ -58,7 +60,6 @@ public class MyLibrary {
 	 * @return The double from the user
 	 */
 	public static double getDouble(String prompt) {
-		Scanner kb = new Scanner(System.in);
 		System.out.print(prompt + "  ");
 		return kb.nextDouble();
 	}
@@ -71,7 +72,6 @@ public class MyLibrary {
 	 * @return The word from the user
 	 */
 	public static String getWord(String prompt) {
-		Scanner kb = new Scanner(System.in);
 		System.out.print(prompt + "  ");
 		return kb.next();
 	}
@@ -84,7 +84,6 @@ public class MyLibrary {
 	 * @return The sentance from the user
 	 */
 	public static String getLine(String prompt) {
-		Scanner kb = new Scanner(System.in);
 		System.out.print(prompt + "  ");
 		return kb.nextLine();
 	}
@@ -99,5 +98,16 @@ public class MyLibrary {
 	 */
 	public static double round(double num, int dec) {
 		return (int) Math.round((num * Math.pow(10, dec))) / Math.pow(10, dec);
+	}
+	
+	/**
+	 * A println function similar to that in Python
+	 *
+	 * @param params The items to print
+	 */
+	public static void println(Object... args) {
+		StringBuilder sb = new StringBuilder();
+		for (Object arg : args) sb.append(arg);
+		System.out.println(sb);
 	}
 }
