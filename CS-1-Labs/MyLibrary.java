@@ -18,14 +18,14 @@ public class MyLibrary {
 	}
 
 	/**
-	 * This method will return an integer in the range [1,n]
+	 * This method will return an integer (long) in the range [1,n]
 	 *
 	 * @param n The maximum value to generate
 	 *
 	 * @return The randomly generated number
 	 */
-	public static int getRandNum(int n) {
-		return (int) (Math.random() * n) + 1;
+	public static long getRandNum(int n) {
+		return (long) (Math.random() * n) + 1;
 	}
 
 	/**
@@ -96,7 +96,7 @@ public class MyLibrary {
 	 *
 	 * @return The rounded number
 	 */
-	public static double round(double num, int dec) {
+	public static double round(double num, long dec) {
 		return (int) Math.round((num * Math.pow(10, dec))) / Math.pow(10, dec);
 	}
 	
@@ -110,4 +110,21 @@ public class MyLibrary {
 		for (Object arg : args) sb.append(arg);
 		System.out.println(sb);
 	}
+
+	/**
+	 * Check if an integer (long) is prime or not
+	 * 
+	 * @param params The number to check for prime
+	 * 
+	 * @return If the numbers if prime or not
+	 */
+	public static boolean prime(long n) {
+    	if (n == 2 || n == 3) return true;
+    	if (n < 2 || n % 2 == 0 || n % 3 == 0) return false;
+    	for (long i = 6L; i <= ((long) Math.sqrt(n) + 1); i += 6)
+        	if (n % (i - 1) == 0 || n % (i + 1) == 0) return false;
+    	return true;
+	}
+
+
 }
