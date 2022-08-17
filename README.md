@@ -14,6 +14,12 @@ I got a **5** on the College Board AP Exam.
 
 I took Honors Computer Science I in my sophomore year of high school during the 2021-2022 school year.
 
+### AP Computer Science
+
+I took AP Computer Science I in my junior year of high school during the 2022-2023 school year.
+
+I got a **NAN** on the College Board AP Exam.
+
 ### UT Austin CS 314 Assignments
 
 I did the [assignments](https://www.cs.utexas.edu/~scottm/cs314/Assignments/index.htm) for [Mike Scott's CS 314 Course at UT Austin](https://www.cs.utexas.edu/~scottm/cs314/index.htm) during my sophomore year of high school for personal practice.
