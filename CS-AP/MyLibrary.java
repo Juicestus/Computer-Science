@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
+import java.lang.reflect.ParameterizedType;
 
 /**
  * Utility library for Computer Science AP in Java.
@@ -143,4 +145,30 @@ public final class MyLibrary {
 		final String str = sb.toString();
 		return str.substring(0, str.length() - 1);
 	}
+	
+	public static class GenericTypeNameResolver<T> {
+		public final Class<T> classType;
+		public GenericTypeNameResolver() {
+			// @SuppressWarnings("unchecked") 
+			this.classType = (Class) (((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0]).getClass();
+			//classType = ((Class) ((ParameterizedType) getClass()
+      			//.getGenericSuperclass()).getActualTypeArguments()[0]);
+		}
+	}
+
+	public static <T> T[] instantiateGenericArray(final int length) {
+		final Class<T> tc = (new GenericTypeNameResolver<T>()).classType;
+		@SuppressWarnings("unchecked") final T[] array = (T[]) Array.newInstance(tc, length);
+		return array;
+	}
+
+	// Test my library
+	public static void main(final String[] args) {
+		Character[] chars = instantiateGenericArray(10);
+		for (int i = 0; i < chars.length; i++) chars[i] = (char) (i + 97);
+
+		for (final Character c : chars) 
+			System.out.print(c + " ");
+	}
+
 }
