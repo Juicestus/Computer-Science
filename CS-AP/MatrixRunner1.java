@@ -23,17 +23,14 @@ public class MatrixRunner1 {
         }
     }    
 
-    public static int sumCount(final int[][] matNums, final int n) {
-        int sum = 0, count = 0;
+    public static int sumCount(final int[][] matNums, int n) {
+        int sum = 0;
         for (int row = 0; row < matNums.length; row++) {
             final boolean right = row % 2 == 0;
             for (int col = right ? 0 : matNums[row].length - 1;
-                    right ? col < matNums[row].length : col >= 0;
+                    (right ? col < matNums[row].length : col >= 0) && n-- > 0;
                     col += right ? 1 : -1) 
-            {
-                if (count++ >= n) return sum;
                 sum += matNums[row][col];
-            }
         }
         return sum;
     }
